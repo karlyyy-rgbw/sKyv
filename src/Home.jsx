@@ -9,7 +9,10 @@ import controller from '../my_imports/controller.svg';
 import currencyBitcoin from '../my_imports/currency-bitcoin.svg';  
 import activity from '../my_imports/activity.svg';  
 import tree from '../my_imports/tree.svg';  
-
+import al from '../my_imports/ff72b31e-b36b-4b0c-8821-2543572aff87_Albert+Einstein.webp';
+import leng from '../my_imports/yas.jpg';
+import josh from '../my_imports/404405060_3147742042186766_907126596061845650_n.jpg';
+import dan from '../my_imports/images.jpeg';
 import Container from 'react-bootstrap/Container';  
 import Nav from 'react-bootstrap/Nav';  
 import Navbar from 'react-bootstrap/Navbar';  
@@ -142,7 +145,7 @@ function Home() {
       <Row>
         <Col md={3}>
       <Card style={{ width: '18rem',marginTop:'10px'}}>
-      <Card.Img variant="top" src="../my_imports/yas.jpg" />
+      <Card.Img variant="top" src={leng} />
       <Card.Body>
         <Card.Title className='karen'><p>Karen M. Celso <span className='karen2'>writer, Naga Collegian</span></p></Card.Title>
         <Card.Text>
@@ -153,7 +156,7 @@ function Home() {
     </Col>
     <Col md={3}>
       <Card style={{ width: '18rem',marginTop:'10px'}}>
-      <Card.Img variant="top" src="../my_imports/404405060_3147742042186766_907126596061845650_n.jpg" />
+      <Card.Img variant="top" src={josh} />
       <Card.Body>
       <Card.Title className='karen'><p>Josh B. Mojica <span className='karen2'>CEO, Kangkong Chips</span></p></Card.Title>
         <Card.Text>
@@ -164,7 +167,7 @@ function Home() {
     </Col>
     <Col md={3}>
       <Card style={{ width: '18rem',marginTop:'10px'}}>
-      <Card.Img variant="top" src="../my_imports/images.jpeg" />
+      <Card.Img variant="top" src={dan} />
       <Card.Body>
       <Card.Title className='karen'><p>Daniel B. Bonito <span className='karen2'>BSCS, NCF</span></p></Card.Title>
         <Card.Text>
@@ -175,7 +178,7 @@ function Home() {
     </Col>
     <Col md={3}>
       <Card style={{ width: '18rem',marginTop:'10px'}}>
-      <Card.Img variant="top" src="../my_imports/ff72b31e-b36b-4b0c-8821-2543572aff87_Albert+Einstein.webp" />
+      <Card.Img variant="top" src={al} />
       <Card.Body>
       <Card.Title className='karen'><p>Albert Einstein <span className='karen2'>professor, NCF</span></p></Card.Title>
         <Card.Text>
