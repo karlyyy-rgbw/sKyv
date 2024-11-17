@@ -1,9 +1,17 @@
 import './App.css';  
 import logo from '../my_imports/logo1.png';  
 import cardImage from '../my_imports/Untitled design.png';    
+import feedbackImage1 from '../my_imports/308104809_10160744312588939_5658224302303139349_n.jpg';  
+import feedbackImage2 from '../my_imports/newyorktimes-svgrepo-com (1).svg';  
+import feedbackImage3 from '../my_imports/441953132_772885594967825_7659918906469719232_n.jpg';  
+import facebookLogo from '../my_imports/Facebook_Logo_2023.png';  
+import instagramLogo from '../my_imports/Instagram_logo_2022.svg.png';  
+import twitterLogo from '../my_imports/Logo_of_twitter.jpg';  
+import githubLogo from '../my_imports/Octicons-mark-github.svg.png';  
+
 import Container from 'react-bootstrap/Container';  
 import Nav from 'react-bootstrap/Nav';  
-import Navbar from 'react-bootstrap/Navbar'; 
+import Navbar from 'react-bootstrap/Navbar';   
 import { Link } from 'react-router-dom';  
 import Card from 'react-bootstrap/Card';  
 import Row from 'react-bootstrap/Row';  
@@ -21,10 +29,10 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />  
             <Navbar.Collapse id="basic-navbar-nav">  
               <Nav className="me-auto">  
-              <Nav.Link as={Link} to="/home">About</Nav.Link>  
+                <Nav.Link as={Link} to="/home">About</Nav.Link>  
                 <Nav.Link as={Link} to="/background">Background</Nav.Link>  
                 <Nav.Link as={Link} to="/projects">Projects</Nav.Link>  
-                <Nav.Link as={Link} to="/services">Services</Nav.Link>
+                <Nav.Link as={Link} to="/services">Services</Nav.Link>  
               </Nav>  
             </Navbar.Collapse>  
           </Container>  
@@ -32,9 +40,7 @@ function App() {
 
         <Row style={{ marginTop: '10px' }}>  
           <Col md={5} className='centre'>  
-            
-              <Card.Img variant="top" src={cardImage} />  
-              
+            <Card.Img variant="top" src={cardImage} />  
           </Col>  
 
           <Col md={6} className='text-center'>  
@@ -50,7 +56,7 @@ function App() {
       <Row>  
         <Col md={3}>  
           <Card className='recCard' style={{ width: '18rem'}}>  
-            <Card.Img className='lomel' variant="top" src='../my_imports/308104809_10160744312588939_5658224302303139349_n.jpg' />  
+            <Card.Img className='lomel' variant="top" src={feedbackImage1} />  
             <Card.Body>  
               <Card.Title>Melchor Villanueva</Card.Title>  
               <Card.Text style={{ fontStyle: 'italic'}}>  
@@ -60,8 +66,8 @@ function App() {
           </Card>  
         </Col>  
         <Col md={3}>  
-          <Card className='recCard  ' style={{ width: '18rem'}}>  
-            <Card.Img className='lomel' variant="top" src='../my_imports/newyorktimes-svgrepo-com (1).svg' />  
+          <Card className='recCard' style={{ width: '18rem'}}>  
+            <Card.Img className='lomel' variant="top" src={feedbackImage2} />  
             <Card.Body>  
               <Card.Title>The New York Times</Card.Title>  
               <Card.Text style={{ fontStyle: 'italic'}}>  
@@ -72,7 +78,7 @@ function App() {
         </Col>  
         <Col md={3}>  
           <Card className='recCard' style={{ width: '18rem'}}>  
-            <Card.Img className='lomel' variant="top" src='../my_imports/441953132_772885594967825_7659918906469719232_n.jpg' />  
+            <Card.Img className='lomel' variant="top" src={feedbackImage3} />  
             <Card.Body>  
               <Card.Title>Feedbacks</Card.Title>  
               <Card.Text style={{ fontStyle: 'italic'}}>  
@@ -83,22 +89,22 @@ function App() {
           </Card>  
         </Col>  
         <Col md={3} style={{ padding: '20px', textAlign: 'right' }}>  
-        <a href="https://www.facebook.com/karlvincentsuayan/" target="_blank" rel="noopener noreferrer">  
-    <img src="../my_imports/Facebook_Logo_2023.png" alt="Facebook" style={{ width: '50px', marginLeft: '0' }} />  
-  </a>  
-  <a href="https://www.instagram.com/kawvlry/" target="_blank" rel="noopener noreferrer">  
-    <img src="../my_imports/Instagram_logo_2022.svg.png" alt="Instagram" style={{ width: '50px', marginLeft: '10px' }} />  
-  </a>  
-  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">  
-    <img src="../my_imports/Logo_of_twitter.jpg" alt="Twitter" style={{ width: '50px', marginLeft: '10px' }} />  
-  </a>  
-  <a href="https://github.com/settings/profile" target="_blank" rel="noopener noreferrer">  
-    <img src="../my_imports/Octicons-mark-github.svg.png" alt="GitHub" style={{ width: '50px', marginLeft: '10px' }} />  
-  </a>  
-</Col>
+          <a href="https://www.facebook.com/karlvincentsuayan/" target="_blank" rel="noopener noreferrer">  
+            <img src={facebookLogo} alt="Facebook" style={{ width: '50px', marginLeft: '0' }} />  
+          </a>  
+          <a href="https://www.instagram.com/kawvlry/" target="_blank" rel="noopener noreferrer">  
+            <img src={instagramLogo} alt="Instagram" style={{ width: '50px', marginLeft: '10px' }} />  
+          </a>  
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">  
+            <img src={twitterLogo} alt="Twitter" style={{ width: '50px', marginLeft: '10px' }} />  
+          </a>  
+          <a href="https://github.com/settings/profile" target="_blank" rel="noopener noreferrer">  
+            <img src={githubLogo} alt="GitHub" style={{ width: '50px', marginLeft: '10px' }} />  
+          </a>  
+        </Col>  
       </Row>  
     </Container>  
   );  
 }  
 
-export default App;
+export default App;  
