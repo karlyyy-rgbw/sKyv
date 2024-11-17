@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';  
 import './EdBg.css';  
 import logo from '../my_imports/logo1.png';  
+import certificateProgramming from '../my_imports/Beige Brown Classic Illustrated Professional Recognition Certificate (1).png';  
+import certificateWebDesign from '../my_imports/Blue White Bordered Certificate Of Achievement Certificate.png';  
+import certificateFullStack from '../my_imports/Gold and Classy Appreciation Certificate.png';  
 import Container from 'react-bootstrap/Container';  
 import Nav from 'react-bootstrap/Nav';  
 import Navbar from 'react-bootstrap/Navbar';  
@@ -110,20 +113,21 @@ function EdBg() {
               <Card.Body>  
                 <ul>  
                   <li>Programming Languages: Python, Java, JavaScript</li>  
-                  <li>Web Technologies: HTML, CSS, React, Bootstrap</li>  
-                  <li>Databases: MySQL, MongoDB</li>  
+                  <li>Web Technologies: HTML, CSS, React, Bootstrap</li>
+                  <li>Database Management: MongoDB, MySQL</li>  
                   <li>Tools: Git, Docker, AWS</li>  
                 </ul>  
               </Card.Body>  
             </Card>  
           </Col>  
         </Row>  
-        
+
+        {/* Carousel Section for Certificates */}  
         <Carousel>  
           <Carousel.Item>  
             <img  
               className="d-block w-100"  
-              src='../my_imports/Beige Brown Classic Illustrated Professional Recognition Certificate (1).png'  
+              src={certificateProgramming}  
               alt="Programming Certificate"  
             />  
             <Carousel.Caption className='hey'>  
@@ -134,7 +138,7 @@ function EdBg() {
           <Carousel.Item>  
             <img  
               className="d-block w-100"  
-              src='../my_imports/Blue White Bordered Certificate Of Achievement Certificate.png'  
+              src={certificateWebDesign}  
               alt="Web Design Certificate"  
             />  
             <Carousel.Caption className='hey'>  
@@ -145,7 +149,7 @@ function EdBg() {
           <Carousel.Item>  
             <img  
               className="d-block w-100"  
-              src='../my_imports/Gold and Classy Appreciation Certificate.png'  
+              src={certificateFullStack}  
               alt="Full Stack Development Certificate"  
             />  
             <Carousel.Caption className='hey'>  
@@ -155,8 +159,8 @@ function EdBg() {
           </Carousel.Item>  
         </Carousel>  
       </Container>  
-    </Container>    
+    </Container>  
   );  
 }  
 
-export default EdBg; 
+export default EdBg;
