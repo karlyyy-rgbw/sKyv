@@ -40,7 +40,7 @@ function Projects() {
           </Container>  
         </Navbar>  
         <div className='Karl'>
-        <div className='logo'><img className='log' src='../my_imports/logo1.png'></img></div>
+        <div className='logo'><img className='log' src={logo}></img></div>
         <div className='serv'><p className='titlee1'>Serv<span className='yell'>ices</span><br></br></p>  </div>
         <div>    <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
