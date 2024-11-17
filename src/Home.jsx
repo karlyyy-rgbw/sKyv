@@ -9,10 +9,6 @@ import controller from '../my_imports/controller.svg';
 import currencyBitcoin from '../my_imports/currency-bitcoin.svg';  
 import activity from '../my_imports/activity.svg';  
 import tree from '../my_imports/tree.svg';  
-import yasImage from '../my_imports/yas.jpg';  
-import joshImage from '../my_imports/404405060_3147742042186766_907126596061845650_n.jpg';  
-import danielImage from '../my_imports/images.jpeg';  
-import einsteinImage from '../my_imports/ff72b31e-b36b-4b0c-8821-2543572aff87_Albert+Einstein.webp';
 
 import Container from 'react-bootstrap/Container';  
 import Nav from 'react-bootstrap/Nav';  
@@ -73,58 +69,56 @@ function Home() {
             </div>
           </div>
         </Row>
-        <Row>  
+<Row style={{ marginLeft: '40px' }}>  
   <Col md={3}>  
-    <Card style={{ width: '18rem', marginTop: '10px' }}>  
-      <Card.Img variant="top" src={yasImage} />  
-      <Card.Body>  
-        <Card.Title className='karen'>  
-          <p>Karen M. Celso <span className='karen2'>writer, Naga Collegian</span></p>  
-        </Card.Title>  
-        <Card.Text>  
-          "As a writer working closely with Karl, I can confidently recommend them for any web development or graphic design project. Karl possesses an impressive skill set that harmoniously blends technical expertise with creative flair. Their designs not only capture attention but also effectively communicate the message we aim to convey. Collaborating with Karl has been a pleasure, as their insights and creativity always elevate our projects to the next level."  
-        </Card.Text>  
-      </Card.Body>  
-    </Card>  
+    <div className='Box'>  
+      <img src={camera} alt='Photography' className='category-image' />  
+      <p className='int'>photography</p>  
+    </div>  
   </Col>  
   <Col md={3}>  
-    <Card style={{ width: '18rem', marginTop: '10px' }}>  
-      <Card.Img variant="top" src={joshImage} />  
-      <Card.Body>  
-        <Card.Title className='karen'>  
-          <p>Josh B. Mojica <span className='karen2'>CEO, Kangkong Chips</span></p>  
-        </Card.Title>  
-        <Card.Text>  
-          "I enthusiastically recommend Karl for any role in web development and graphic design. His innovative approach to projects at KC Chips consistently resulted in outstanding websites that combined aesthetic appeal with seamless functionality. Karl’s technical expertise, coupled with his creativity and attention to detail, made a significant impact on our team’s success. He is not just a talented developer and designer but also a reliable team player."  
-        </Card.Text>  
-      </Card.Body>  
-    </Card>  
+    <div className='Box'>  
+      <img src={pen} alt='Graphics' className='category-image' />  
+      <p className='int'>graphics</p>  
+    </div>  
   </Col>  
   <Col md={3}>  
-    <Card style={{ width: '18rem', marginTop: '10px' }}>  
-      <Card.Img variant="top" src={danielImage} />  
-      <Card.Body>  
-        <Card.Title className='karen'>  
-          <p>Daniel B. Bonito <span className='karen2'>BSCS, NCF</span></p>  
-        </Card.Title>  
-        <Card.Text>  
-          "Karl is an incredible web developer and graphic designer. During our time working together at Naga College Foundation, I was consistently impressed by his ability to create engaging and user-friendly interfaces. His technical skills are remarkable, and his collaborative spirit makes him a joy to work with. Karl's commitment to excellence and his innovative ideas greatly contributed to our projects, and I wholeheartedly endorse him for any opportunity he pursues."  
-        </Card.Text>  
-      </Card.Body>  
-    </Card>  
+    <div className='Box'>  
+      <img src={browserEdge} alt='Web Development' className='category-image' />  
+      <p className='int'>web dev</p>  
+    </div>  
   </Col>  
   <Col md={3}>  
-    <Card style={{ width: '18rem', marginTop: '10px' }}>  
-      <Card.Img variant="top" src={einsteinImage} />  
-      <Card.Body>  
-        <Card.Title className='karen'>  
-          <p>Albert Einstein <span className='karen2'>professor, NCF</span></p>  
-        </Card.Title>  
-        <Card.Text>  
-          "It is my pleasure to recommend Karl, who excelled in my web dev courses at NCF. His passion for web development and graphic design was evident in his projects, where he showcased not only technical proficiency but also a keen eye for aesthetics. Karl’s work was innovative and thoughtful, earning him high praise from both peers and faculty. I have no doubt that his skills and creativity will make him a valuable asset in any future endeavor."  
-        </Card.Text>  
-      </Card.Body>  
-    </Card>  
+    <div className='Box'>  
+      <img src={lightningCharge} alt='Sports' className='category-image' />  
+      <p className='int'>sports</p>  
+    </div>  
+  </Col>  
+</Row>  
+<Row style={{ marginLeft: '40px' }}>  
+  <Col md={3}>  
+    <div className='Box'>  
+      <img src={controller} alt='Esports' className='category-image' />  
+      <p className='int'>esports</p>  
+    </div>  
+  </Col>  
+  <Col md={3}>  
+    <div className='Box'>  
+      <img src={currencyBitcoin} alt='Crypto' className='category-image' />  
+      <p className='int'>crypto</p>  
+    </div>  
+  </Col>  
+  <Col md={3}>  
+    <div className='Box'>  
+      <img src={activity} alt='Arts' className='category-image' />  
+      <p className='int'>arts</p>  
+    </div>  
+  </Col>  
+  <Col md={3}>  
+    <div className='Box'>  
+      <img src={tree} alt='Pets' className='category-image' />  
+      <p className='int'>pets</p>  
+    </div>  
   </Col>  
 </Row>
         <Row style={{ marginLeft: '40px', marginTop: '20px' }}>  
